@@ -1,0 +1,8 @@
+all:
+    (cd timerLib; make install)
+    (cd mainFiles; make)
+
+clean:
+    (cd timerLib; make clean)
+    (cd mainFiles; make clean)
+    rm -rf lib h

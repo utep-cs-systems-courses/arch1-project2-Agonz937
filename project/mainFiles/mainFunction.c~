@@ -1,0 +1,12 @@
+#include <msp430>
+#include "../timerLib/libTimer.h"
+#include "buzzer.h"
+
+void main(){
+  configureClocks();
+  enableWDTInrerrupts();
+  buzzer_init(); //Start buzzer
+  play_songs(1);
+
+  or_sr(0x18);
+}
