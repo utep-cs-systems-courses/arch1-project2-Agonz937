@@ -42,22 +42,22 @@ switch_interrupt_handler()
   switch4_state_down = (p2val & SW4) ? 0 : 1; /* 0 when SW4 is up */
 
   if (switch1_state_down){
-    the_office();
+    random_noise1();
     switch_state_changed = 1;
   }
 
   if (switch2_state_down){
-    the_office();
+    random_noise2();
     switch_state_changed = 2;
   }
 
   if (switch3_state_down){
-    the_office();
+    random_noise3();
     switch_state_changed = 3;
   }
 
   if (switch4_state_down){
-    the_office();
+    random_noise4();
     switch_state_changed = 4; 
   }
 }
